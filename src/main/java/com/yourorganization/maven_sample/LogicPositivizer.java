@@ -31,7 +31,7 @@ public class LogicPositivizer
 
     ChromeOptions options = new ChromeOptions();
 	 options.addArguments("--use-fake-ui-for-media-stream");
-	 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
+	 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\chromedriver_win32\\chromedriver.exe");
 	 options.addArguments("--headless");
     options.addArguments("--use-fake-device-for-media-stream");
 	 options.addArguments("--start-fullscreen");
