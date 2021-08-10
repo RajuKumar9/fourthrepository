@@ -9,14 +9,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.Test;
 
-/**
- * Some code that uses JavaParser.
- */
 public class LogicPositivizer 
 {   
-	
-    public static void main(String[] args) throws InterruptedException, AWTException 
+	@Test
+    public void openapp()throws InterruptedException, AWTException 
     {   WebDriver driver;
 
     ChromeOptions options = new ChromeOptions();
