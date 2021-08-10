@@ -12,17 +12,19 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class LogicPositivizer 
-{   
+{    WebDriver driver;
     @Test
     public void openapp()throws InterruptedException, AWTException 
-    {   WebDriver driver;
+    {  
 
     ChromeOptions options = new ChromeOptions();
-	 options.addArguments("--use-fake-ui-for-media-stream");
-	 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
+	options.addArguments("--use-fake-ui-for-media-stream");
+	 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\chromedriver_win32\\chromedriver.exe");
 	 options.addArguments("--headless");
     options.addArguments("--use-fake-device-for-media-stream");
-	 options.addArguments("--start-fullscreen");
+	 options.addArguments("--start-fullscreen");	
+	 		
+	 
 	 //options.addArguments("--use-file-for-fake-video-capture=");
 	 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
 	 options.addArguments("--autoplay-policy=no-user-gesture-required");
@@ -33,7 +35,7 @@ public class LogicPositivizer
 	 		
 	 System.out.println(driver.getTitle());	
 	 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("media8");
+    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("First User");
     Thread.sleep(2000);
     driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
     		
