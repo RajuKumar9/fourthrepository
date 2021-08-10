@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 public class LogicPositivizer 
 {   
-	@Test
+    @Test
     public void openapp()throws InterruptedException, AWTException 
     {   WebDriver driver;
 
@@ -61,4 +61,6 @@ public class LogicPositivizer
     rb.keyPress(KeyEvent.VK_ENTER);	
     rb.keyRelease(KeyEvent.VK_ENTER);
     }
+    
+    
 }
