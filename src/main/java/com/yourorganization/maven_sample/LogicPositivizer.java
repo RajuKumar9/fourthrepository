@@ -19,7 +19,7 @@ public class LogicPositivizer
 
     ChromeOptions options = new ChromeOptions();
 	options.addArguments("--use-fake-ui-for-media-stream");
-	 System.setProperty("webdriver.chrome.driver","/user/bin/google-chrome");
+	 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\chromedriver_win32\\chromedriver.exe");
 	 options.addArguments("--headless");
     options.addArguments("--use-fake-device-for-media-stream");
 	 options.addArguments("--start-fullscreen");	
@@ -35,7 +35,7 @@ public class LogicPositivizer
 	 		
 	 System.out.println(driver.getTitle());	
 	 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("md5");
+    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("MD5");
     Thread.sleep(2000);
     driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
     		

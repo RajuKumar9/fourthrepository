@@ -3,6 +3,16 @@
 <suite parallel="none" name="Failed suite [Parallel Testing Suite]">
   <test parallel="methods" name="Parallel Tests(failed)">
     <classes>
+      <class name="com.yourorganization.maven_sample.FourthUser">
+        <methods>
+          <include name="openapp"/>
+        </methods>
+      </class> <!-- com.yourorganization.maven_sample.FourthUser -->
+      <class name="com.yourorganization.maven_sample.LogicPositivizer">
+        <methods>
+          <include name="openapp"/>
+        </methods>
+      </class> <!-- com.yourorganization.maven_sample.LogicPositivizer -->
       <class name="com.yourorganization.maven_sample.FifthUser">
         <methods>
           <include name="openapp"/>
