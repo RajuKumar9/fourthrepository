@@ -34,7 +34,7 @@ public class SecondUser
 		 		
 		 System.out.println(driver.getTitle());	
 		 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("second User");
+	    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("md1");
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
 	    		

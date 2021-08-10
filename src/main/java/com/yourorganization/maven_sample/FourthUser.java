@@ -32,7 +32,7 @@ public class FourthUser
 		 		
 		 System.out.println(driver.getTitle());	
 		 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Fourth user");
+	    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("md3");
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
 	    		

@@ -33,7 +33,7 @@ public class ThirdUser
 		 		
 		 System.out.println(driver.getTitle());	
 		 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Third User");
+	    driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("md2");
 	    Thread.sleep(2000);
 	    driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
 	    		
