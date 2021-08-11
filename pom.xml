@@ -48,6 +48,7 @@
 </dependency>  
 
 
+
     </dependencies>
 
     <!-- This blob of configuration tells Maven to make the jar executable. You can run it with:
@@ -78,11 +79,9 @@
                     </execution>
                 </executions>
             </plugin>
-            
-             <plugin>
+            <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version>
         <configuration>
       <suiteXmlFiles>
       <suiteXmlFile>${xmlFiles}</suiteXmlFile>
