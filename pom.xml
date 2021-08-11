@@ -72,12 +72,26 @@
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>com.yourorganization.maven_sample.LogicPositivizer</mainClass>
+                                     <mainClass>com.yourorganization.maven_sample.SecondUser</mainClass>
+                                     <mainClass>com.yourorganization.maven_sample.ThirdUser</mainClass>
+                                     <mainClass>com.yourorganization.maven_sample.FourthUser</mainClass>
+                                     <mainClass>com.yourorganization.maven_sample.FifthUser</mainClass>
+                                    
+                                    
                                 </transformer>
                             </transformers>
+                            
+                            
+                            
+                            
+                            
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+            
+            
+            
         </plugins>
     </build>
 </project>
