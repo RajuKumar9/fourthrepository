@@ -2,36 +2,36 @@
 <testng-results total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-10T11:39:19Z" name="Parallel Testing Suite" finished-at="2021-08-10T11:39:42Z" duration-ms="23105">
+  <suite started-at="2021-08-11T08:41:19Z" name="Parallel Testing Suite" finished-at="2021-08-11T08:41:41Z" duration-ms="22656">
     <groups>
     </groups>
-    <test started-at="2021-08-10T11:39:19Z" name="Parallel Tests" finished-at="2021-08-10T11:39:42Z" duration-ms="23105">
+    <test started-at="2021-08-11T08:41:19Z" name="Parallel Tests" finished-at="2021-08-11T08:41:41Z" duration-ms="22656">
       <class name="com.yourorganization.maven_sample.FifthUser">
-        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.FifthUser@1e4d3ce5]" started-at="2021-08-10T17:09:19Z" name="openapp" finished-at="2021-08-10T17:09:42Z" duration-ms="23012" status="PASS">
+        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.FifthUser@1e4d3ce5]" started-at="2021-08-11T14:11:19Z" name="openapp" finished-at="2021-08-11T14:11:41Z" duration-ms="22608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
       </class> <!-- com.yourorganization.maven_sample.FifthUser -->
-      <class name="com.yourorganization.maven_sample.SecondUser">
-        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.SecondUser@3ddc6915]" started-at="2021-08-10T17:09:19Z" name="openapp" finished-at="2021-08-10T17:09:42Z" duration-ms="23088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapp -->
-      </class> <!-- com.yourorganization.maven_sample.SecondUser -->
       <class name="com.yourorganization.maven_sample.FourthUser">
-        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.FourthUser@4b5189ac]" started-at="2021-08-10T17:09:19Z" name="openapp" finished-at="2021-08-10T17:09:42Z" duration-ms="23011" status="PASS">
+        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.FourthUser@4b5189ac]" started-at="2021-08-11T14:11:19Z" name="openapp" finished-at="2021-08-11T14:11:41Z" duration-ms="22627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
       </class> <!-- com.yourorganization.maven_sample.FourthUser -->
+      <class name="com.yourorganization.maven_sample.SecondUser">
+        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.SecondUser@3ddc6915]" started-at="2021-08-11T14:11:19Z" name="openapp" finished-at="2021-08-11T14:11:41Z" duration-ms="22628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+      </class> <!-- com.yourorganization.maven_sample.SecondUser -->
       <class name="com.yourorganization.maven_sample.ThirdUser">
-        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.ThirdUser@704deff2]" started-at="2021-08-10T17:09:19Z" name="openapp" finished-at="2021-08-10T17:09:42Z" duration-ms="23011" status="PASS">
+        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.ThirdUser@704deff2]" started-at="2021-08-11T14:11:19Z" name="openapp" finished-at="2021-08-11T14:11:41Z" duration-ms="22629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
       </class> <!-- com.yourorganization.maven_sample.ThirdUser -->
       <class name="com.yourorganization.maven_sample.LogicPositivizer">
-        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.LogicPositivizer@4a3631f8]" started-at="2021-08-10T17:09:19Z" name="openapp" finished-at="2021-08-10T17:09:42Z" duration-ms="23012" status="PASS">
+        <test-method signature="openapp()[pri:0, instance:com.yourorganization.maven_sample.LogicPositivizer@4a3631f8]" started-at="2021-08-11T14:11:19Z" name="openapp" finished-at="2021-08-11T14:11:41Z" duration-ms="22624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
