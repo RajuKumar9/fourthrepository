@@ -54,12 +54,7 @@
                                      <mainClass>com.yourorganization.maven_sample.FifthUser</mainClass>
                                 </transformer>
                             </transformers>
-                            
-                            
-                            
-                            
-                            
-                        </configuration>
+                           </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -101,13 +96,12 @@
 			<scope>test</scope>
 		</dependency>
 		
-		  <dependency>
+ <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
+<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>2.53.0</version>
+    <artifactId>selenium-server</artifactId>
+    <version>3.141.59</version>
 </dependency>
-
- 
 
 <dependency>  
  <groupId>org.testng</groupId>  
