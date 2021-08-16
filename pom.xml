@@ -1,62 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>simplet</groupId>
+	<artifactId>simplett</artifactId>
+	<version>$1.0-SNAPSHOT</version>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/main/www</directory>
+				<targetPath>www</targetPath>
+			</resource>
+		</resources>
+		<plugins>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-surefire-plugin</artifactId>
+<version>3.0.0-M5</version>
+<configuration>
+<suiteXmlFiles>
+<suiteXmlFile>testng.xml</suiteXmlFile>
+</suiteXmlFiles>
+</configuration>
+</plugin>
 
-    <!-- This is often your domain name (reversed.)  -->
-    <groupId>com.yourorganization</groupId>
-    <!-- The name of this project (actually, the name of the artifact, which is the thing that this project produces. A jar in this case.) -->
-    <artifactId>javaparser-maven-sample</artifactId>
-    <!-- The version of this project. SNAPSHOT means "we're still working on it" -->
-    <version>1.0-SNAPSHOT</version>
-
-    <properties>
-        <!-- Tell Maven we want to use Java 8 -->
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <!-- Tell Maven to treat all source files as UTF-8 -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-
-    <dependencies>
-        <!-- Here are all your dependencies. Currently only one. These are automatically downloaded from https://mvnrepository.com/ -->
-        <dependency>
-            <groupId>com.github.javaparser</groupId>
-            <artifactId>javaparser-core</artifactId>
-            <version>3.22.0</version>
-        </dependency>
-        
-        <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>2.53.0</version>
-</dependency>
-
-<dependency>  
-<groupId>junit</groupId>  
-<artifactId>junit</artifactId>  
-<version>3.8.1</version>  
-<scope>test</scope>  
-</dependency>  
-
-<dependency>  
- <groupId>org.testng</groupId>  
- <artifactId>testng</artifactId>  
- <version>6.8</version>  
- <scope>compile</scope>  
-</dependency>  
-
-
-    </dependencies>
-
-    <!-- This blob of configuration tells Maven to make the jar executable. You can run it with:
-    mvn clean package
-    java -jar target/javaparser-maven-sample-1.0-SNAPSHOT-shaded.jar
-    -->
-    <build>
-        <plugins>
-            <plugin>
+<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.4</version>
@@ -76,8 +52,6 @@
                                      <mainClass>com.yourorganization.maven_sample.ThirdUser</mainClass>
                                      <mainClass>com.yourorganization.maven_sample.FourthUser</mainClass>
                                      <mainClass>com.yourorganization.maven_sample.FifthUser</mainClass>
-                                    
-                                    
                                 </transformer>
                             </transformers>
                             
@@ -90,8 +64,57 @@
                 </executions>
             </plugin>
             
-            
-            
-        </plugins>
-    </build>
+
+</plugins>
+		
+		
+	</build>
+	
+	 
+
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.13</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.peppermintchain</groupId>
+			<artifactId>peppermint-chain-dev</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		
+		  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>2.53.0</version>
+</dependency>
+
+ 
+
+<dependency>  
+ <groupId>org.testng</groupId>  
+ <artifactId>testng</artifactId>  
+ <version>6.8</version>  
+ <scope>compile</scope>  
+</dependency>  
+</dependencies>
+
 </project>
