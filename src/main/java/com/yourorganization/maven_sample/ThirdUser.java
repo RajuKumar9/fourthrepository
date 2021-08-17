@@ -52,8 +52,7 @@ public class ThirdUser
 	     Thread.sleep(2000);
 	     rb.keyPress(KeyEvent.VK_ENTER);	
 	     rb.keyRelease(KeyEvent.VK_ENTER);
-	     Thread.sleep(5000);
-	     driver.quit();
+	  
 	   
 	    }
 	
