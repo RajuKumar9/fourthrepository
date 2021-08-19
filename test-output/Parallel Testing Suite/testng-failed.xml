@@ -3,31 +3,21 @@
 <suite parallel="none" name="Failed suite [Parallel Testing Suite]">
   <test parallel="methods" name="Parallel Tests(failed)">
     <classes>
-      <class name="com.yourorganization.maven_sample.FourthUser">
-        <methods>
-          <include name="openapp"/>
-        </methods>
-      </class> <!-- com.yourorganization.maven_sample.FourthUser -->
       <class name="com.yourorganization.maven_sample.LogicPositivizer">
         <methods>
           <include name="openapp"/>
         </methods>
       </class> <!-- com.yourorganization.maven_sample.LogicPositivizer -->
-      <class name="com.yourorganization.maven_sample.FifthUser">
-        <methods>
-          <include name="openapp"/>
-        </methods>
-      </class> <!-- com.yourorganization.maven_sample.FifthUser -->
-      <class name="com.yourorganization.maven_sample.SecondUser">
-        <methods>
-          <include name="openapp"/>
-        </methods>
-      </class> <!-- com.yourorganization.maven_sample.SecondUser -->
       <class name="com.yourorganization.maven_sample.ThirdUser">
         <methods>
           <include name="openapp"/>
         </methods>
       </class> <!-- com.yourorganization.maven_sample.ThirdUser -->
+      <class name="com.yourorganization.maven_sample.SecondUser">
+        <methods>
+          <include name="openapp"/>
+        </methods>
+      </class> <!-- com.yourorganization.maven_sample.SecondUser -->
     </classes>
   </test> <!-- Parallel Tests(failed) -->
 </suite> <!-- Failed suite [Parallel Testing Suite] -->

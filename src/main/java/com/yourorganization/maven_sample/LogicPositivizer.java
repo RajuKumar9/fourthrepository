@@ -22,32 +22,29 @@ public class LogicPositivizer
 	 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\chromedriver_win32_new\\chromedriver.exe");
 	 options.addArguments("--headless");
      options.addArguments("--use-fake-device-for-media-stream");		
-    
-	 //options.addArguments("--start-fullscreen");	
+     //options.addArguments("--start-fullscreen");	
 	 //options.addArguments("--use-file-for-fake-video-capture=");
 	 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
 	 options.addArguments("--autoplay-policy=no-user-gesture-required");
 	 options.addArguments("--disable-infobars");	
 	 driver = new ChromeDriver(options);		
      driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
-     driver.manage().window().maximize();		
-	 System.out.println(driver.getTitle());	
+     driver.manage().window().maximize();	
 	 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	
-     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("trim1");
+	 Thread.sleep(2000);
+     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Webcam1");
+     System.out.println(driver.getTitle());
      Thread.sleep(2000);
      driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
-    		
-    
      Robot rb=new Robot();		
-   		
-     Thread.sleep(8000);			
+   	 Thread.sleep(8000);			
      rb.keyPress(KeyEvent.VK_TAB);						
      rb.keyRelease(KeyEvent.VK_TAB);
-  
      Thread.sleep(1000);
      rb.keyPress(KeyEvent.VK_ENTER);
-     rb.keyRelease(KeyEvent.VK_ENTER);
+     rb.keyRelease(KeyEvent.VK_ENTER);		
+     
+     
      Thread.sleep(2000);
      rb.keyPress(KeyEvent.VK_TAB);			
   
@@ -58,7 +55,8 @@ public class LogicPositivizer
      Thread.sleep(2000);
      rb.keyPress(KeyEvent.VK_ENTER);	
      rb.keyRelease(KeyEvent.VK_ENTER);       
-     
+   
+	 
     
     }
     
