@@ -19,7 +19,7 @@ public class FourthUser
 
 		  ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--use-fake-ui-for-media-stream");
-			 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
+			 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\driver\\chromedriver_win32\\chromedriver.exe");
 			 options.addArguments("--headless");
 		     options.addArguments("--use-fake-device-for-media-stream");		
 		     //options.addArguments("--start-fullscreen");	
@@ -30,7 +30,7 @@ public class FourthUser
 			 driver = new ChromeDriver(options);		
 		     driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
 		     driver.manage().window().maximize();
-		     driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
+			 driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
 		     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Webcam4");
 		     System.out.println(driver.getTitle());	
 		     Thread.sleep(2000);
