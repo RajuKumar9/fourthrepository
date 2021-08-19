@@ -19,7 +19,7 @@ public class FifthUser
 	    {  
 		     ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--use-fake-ui-for-media-stream");
-			 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\chromedriver_win32_new\\chromedriver.exe");
+			 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
 			 options.addArguments("--headless");
 		     options.addArguments("--use-fake-device-for-media-stream");						
 		    // options.addArguments("--start-fullscreen");	
