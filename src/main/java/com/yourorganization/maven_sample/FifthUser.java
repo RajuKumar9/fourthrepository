@@ -31,7 +31,6 @@ public class FifthUser
 		     driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
 		     driver.manage().window().maximize();
 			 driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
-			 Thread.sleep(2000);
 		     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Webcam5");
 		     System.out.println(driver.getTitle());	
 		     Thread.sleep(2000);
