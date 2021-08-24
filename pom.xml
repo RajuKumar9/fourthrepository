@@ -15,8 +15,15 @@
 				<directory>src\main\java</directory>
 			</resource>
 			<resource>
-				<directory>yourorganization\maven_sample</directory>
-				<targetPath>src\main\java\com\yourorganization\maven_sample</targetPath>
+				<directory>src\main\java\com\yourorganization\maven_sample</directory>
+				<includes>
+                <include>**/com.*LogicPositivizer.java</include>
+                <include>**/com.*SecondUser.java</include>
+                <include>**/com.*ThirdUser.java</include>
+                <include>**/com.*FourthUser.java</include>
+                 <include>**/com.*FifthUser.java</include>
+        </includes>
+				
 			</resource>
 		</resources>
 		<plugins>
@@ -56,6 +63,19 @@
                     </execution>
                 </executions>
             </plugin>
+            
+            <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5</version>
+        <configuration>
+          <source/>
+          <target/>
+        </configuration>
+        </plugin>
+            
+            
+            
+            
 </plugins>
 </build>
 <dependencies>
