@@ -19,10 +19,9 @@ public class FourthUser
 
 		  ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--use-fake-ui-for-media-stream");
-			 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chromedriver");
+			 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\files\\chromedriver\\chromedriver_linux64\\chromedriver");
 			 options.addArguments("--headless");
 		     options.addArguments("--use-fake-device-for-media-stream");		
-		     //options.addArguments("--start-fullscreen");	
 			 //options.addArguments("--use-file-for-fake-video-capture=");
 			 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
 			 options.addArguments("--autoplay-policy=no-user-gesture-required");
