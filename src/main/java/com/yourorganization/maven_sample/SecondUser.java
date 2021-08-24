@@ -19,7 +19,7 @@ public class SecondUser
 	    { 
 		  ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--use-fake-ui-for-media-stream");
-			 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chrome");
+			 System.setProperty("webdriver.chrome.driver","/usr/bin/google-chromedriver");
 			 options.addArguments("--headless");
 		     options.addArguments("--use-fake-device-for-media-stream");		
 		     //options.addArguments("--start-fullscreen");	
