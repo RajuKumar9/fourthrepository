@@ -18,6 +18,7 @@
 				<directory>src\main\java\yourorganization\maven_sample</directory>
 				<includes>
 				<include>LogicPositivizer.java</include>
+				<include>SecondUser.java</include>
 				
 				</includes>
 			</resource>
