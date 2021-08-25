@@ -22,7 +22,7 @@ public class SecondUser
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
 		     options.addArguments("--use-fake-device-for-media-stream");		
-		     //options.addArguments("--start-fullscreen");	
+		     options.addArguments("--no-sandbox");	
 			 //options.addArguments("--use-file-for-fake-video-capture=");
 			 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
 			 options.addArguments("--autoplay-policy=no-user-gesture-required");
