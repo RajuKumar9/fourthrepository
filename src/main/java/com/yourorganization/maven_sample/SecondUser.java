@@ -54,8 +54,7 @@ public class SecondUser
 		     Thread.sleep(2000);
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);       
-		     Thread.sleep(10000);
-		     driver.navigate().refresh();
+		    
 		 
 	     
 	    }
