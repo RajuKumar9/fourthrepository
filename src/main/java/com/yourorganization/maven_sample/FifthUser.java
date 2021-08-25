@@ -22,8 +22,8 @@ public class FifthUser
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
 			 options.addArguments("-Djava.awt.headless=true");
+			 options.addArguments("--allow-file-access-from-files");	
 		     options.addArguments("--use-fake-device-for-media-stream");						
-		    // options.addArguments("--no-sandbox");
 			 //options.addArguments("--use-file-for-fake-video-capture=");
 			 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
 			 options.addArguments("--autoplay-policy=no-user-gesture-required");
@@ -55,8 +55,7 @@ public class FifthUser
 		     Thread.sleep(2000);
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);       
-		     Thread.sleep(10000);
-		     driver.navigate().refresh();
+		    
 		     
 	    
 	    }
