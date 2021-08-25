@@ -19,7 +19,7 @@ public class FourthUser
 
 		  ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--use-fake-ui-for-media-stream");
-			 System.setProperty("webdriver.chrome.driver","/home/ec2-user/chromedriver");
+			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
 		     options.addArguments("--use-fake-device-for-media-stream");		
 			 //options.addArguments("--use-file-for-fake-video-capture=");
