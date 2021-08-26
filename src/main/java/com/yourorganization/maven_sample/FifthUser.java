@@ -21,7 +21,6 @@ public class FifthUser
 			 options.addArguments("--use-fake-ui-for-media-stream");
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
-			 options.addArguments("-Djava.awt.headless=true");
 			 options.addArguments("--allow-file-access-from-files");	
 		     options.addArguments("--use-fake-device-for-media-stream");						
 			 //options.addArguments("--use-file-for-fake-video-capture=");
