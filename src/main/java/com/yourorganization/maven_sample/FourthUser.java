@@ -56,9 +56,9 @@ public class FourthUser
 		     Thread.sleep(2000);
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);       
-	       }catch(Throwable e)
+	       }catch(Exception e)
 	        {
-	    	   e.printStackTrace();
+	    	  
 	        }
 	 
 	  

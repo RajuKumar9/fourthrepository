@@ -59,10 +59,10 @@ public class ThirdUser
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);       
 		    }
-		    catch(Throwable e)
-		    {
-		     e.printStackTrace();
-		    }
+		    catch(Exception e)
+	        {
+	    	  
+	        }
 		    
 	    }
 	
