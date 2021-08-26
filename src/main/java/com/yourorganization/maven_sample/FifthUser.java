@@ -20,14 +20,12 @@ public class FifthUser
 	       ChromeOptions options = new ChromeOptions();
 	  	   options.addArguments("--use-fake-ui-for-media-stream");
 	  	   System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
-	  	   options.addArguments("--headless");
+	  	  options.addArguments("--headless");
 	  	// options.addArguments("-Djava.awt.headless=true");
 	  	 //options.addArguments("--allow-file-access-from-files");	
 	       options.addArguments("--use-fake-device-for-media-stream");						
 	  	 //options.addArguments("--use-file-for-fake-video-capture=");
-	       Thread.sleep(2000);
 	  	   options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
-	  	   Thread.sleep(6000);
 	  	   options.addArguments("--autoplay-policy=no-user-gesture-required");
 	  	   options.addArguments("--disable-infobars");	
 	  	   driver = new ChromeDriver(options);		
