@@ -1,6 +1,5 @@
 package com.yourorganization.maven_sample;
 
-import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
@@ -15,8 +14,10 @@ public class SecondUser
 {
 	 WebDriver driver;
 	  @Test
-	    public void openapp()throws InterruptedException, AWTException 
-	    {  
+	    public void openapp()
+	    {   
+		     try
+		     {
 		     ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--use-fake-ui-for-media-stream");
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
@@ -55,7 +56,9 @@ public class SecondUser
 		     Thread.sleep(2000);
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);       
-		    
+		     }catch (Throwable e) {
+			  e.printStackTrace();
+			 }
 		     
 	     
 	    }
