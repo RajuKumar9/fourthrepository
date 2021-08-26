@@ -22,7 +22,7 @@ public class ThirdUser
 			 options.addArguments("--use-fake-ui-for-media-stream");
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
-			 options.addArguments("--allow-file-access-from-files");	
+			// options.addArguments("--allow-file-access-from-files");	
 		     options.addArguments("--use-fake-device-for-media-stream");	
 			 //options.addArguments("--use-file-for-fake-video-capture=");
 			 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
