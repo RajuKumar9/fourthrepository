@@ -23,8 +23,10 @@ public class ThirdUser
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
 			 options.addArguments("--window-size=1920,1200");
-		  	 options.addArguments("--disable-dev-shm-usage");
-			 options.addArguments("-Djava.awt.headless=true");
+			 options.addArguments("--disable-gpu");
+			 options.addArguments("start-maximized");
+			 options.addArguments("enable-automation");
+			 
 			 options.addArguments("--allow-file-access-from-files");	
 		     options.addArguments("--use-fake-device-for-media-stream");						
 			 //options.addArguments("--use-file-for-fake-video-capture=");
