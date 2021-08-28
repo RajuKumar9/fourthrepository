@@ -27,6 +27,7 @@ public class FourthUser
 		     options.addArguments("--use-fake-device-for-media-stream");	
 		     options.addArguments("--whitelisted-ips 192.168.1.191");
 		     options.addArguments("--port=9515");
+		     options.addArguments("--disable-gpu");
 			 //options.addArguments("--use-file-for-fake-video-capture=");
 			 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
 			 options.addArguments("--autoplay-policy=no-user-gesture-required");
