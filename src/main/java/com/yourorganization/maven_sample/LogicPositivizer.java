@@ -20,12 +20,12 @@ public void openapp()
 	 options.addArguments("--use-fake-ui-for-media-stream");
 	 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 	 options.addArguments("--headless");
-	 options.addArguments("--remote-debugging-port=9515");
+	 options.addArguments("--window-size=1920,1200");
 	 //options.addArguments("--disable-extensions");
 	 options.addArguments("-Djava.awt.headless=true");
 	 options.addArguments("--allow-file-access-from-files");	
-     options.addArguments("--use-fake-device-for-media-stream");	
-     //options.addArguments("--use-file-for-fake-video-capture=");
+     options.addArguments("--use-fake-device-for-media-stream");						
+	 //options.addArguments("--use-file-for-fake-video-capture=");
 	 options.addArguments("--use-file-for-fake-audio-capture=audio.wav");
 	 options.addArguments("--autoplay-policy=no-user-gesture-required");
 	 options.addArguments("--disable-infobars");	
