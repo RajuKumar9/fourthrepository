@@ -18,6 +18,7 @@ public class FifthUser
 	  {   try
       {
 	     ChromeOptions options = new ChromeOptions();
+	     driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		 options.addArguments("--use-fake-ui-for-media-stream");
 		 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		 options.addArguments("--headless");
@@ -33,7 +34,7 @@ public class FifthUser
 		 driver = new ChromeDriver(options);		
 	     driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
 	     driver.manage().window().maximize();
-		 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		 Thread.sleep(2000);
 	     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("AW-4");
 	     System.out.println(driver.getTitle());	
 	     Thread.sleep(2000);
@@ -57,10 +58,10 @@ public class FifthUser
 	     Thread.sleep(2000);
 	     rb.keyPress(KeyEvent.VK_ENTER);	
 	     rb.keyRelease(KeyEvent.VK_ENTER);       
-      }catch(Throwable e)
-       {
-   	   e.printStackTrace();
-       }
+         }catch(Throwable e)
+         {
+   	      e.printStackTrace();
+          }
 
  
    }
