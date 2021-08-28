@@ -22,7 +22,6 @@ public class SecondUser
 			 options.addArguments("--use-fake-ui-for-media-stream");
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
-			 options.addArguments("--disable-dev-shm-usage");
 			 options.addArguments("--remote-debugging-port=9515");
 		  	 //options.addArguments("--disable-extensions");
 			 options.addArguments("-Djava.awt.headless=true");
