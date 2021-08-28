@@ -21,8 +21,7 @@ public class FourthUser
 			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
 			 options.addArguments("--window-size=1920,1200");
-			 options.addArguments("--disable-gpu");
-			 options.addArguments("start-maximized");
+			 
 			 options.addArguments("enable-automation");
 			
 			 options.addArguments("--allow-file-access-from-files");	
