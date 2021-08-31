@@ -58,7 +58,7 @@ public class FourthUser
 		     rb.keyRelease(KeyEvent.VK_ENTER);  
 		     Thread.sleep(300000);
 		     driver.navigate().refresh();
-		     driver.close();
+		     
 	         }catch(Throwable e)
 	        {
 	    	   e.printStackTrace();
