@@ -14,7 +14,8 @@ public class LogicPositivizer
 {   WebDriver driver;
 @Test
 public void openapp()
-{    try
+{    
+  try
      {  
      ChromeOptions options = new ChromeOptions();
 	 options.addArguments("--use-fake-ui-for-media-stream");
@@ -57,6 +58,7 @@ public void openapp()
      rb.keyPress(KeyEvent.VK_ENTER);	
      rb.keyRelease(KeyEvent.VK_ENTER); 
      Thread.sleep(300000);
+     driver.quit();
      }catch(Throwable e)
       { 
     	 e.printStackTrace();
