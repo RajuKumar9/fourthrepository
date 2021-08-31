@@ -22,7 +22,7 @@ public class FourthUser
 			 options.addArguments("--headless");
 			 options.addArguments("--window-size=1920,1200");
 		  	 //options.addArguments("--disable-extensions");
-			 options.addArguments("-Djava.awt.headless=true");
+			 //options.addArguments("-Djava.awt.headless=true");
 			 options.addArguments("--allow-file-access-from-files");	
 		     options.addArguments("--use-fake-device-for-media-stream");						
 			 //options.addArguments("--use-file-for-fake-video-capture=");
