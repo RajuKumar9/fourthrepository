@@ -23,12 +23,12 @@ public void openapp()
 	 options.addArguments("--window-size=1920,1200");
 	 //options.addArguments("--disable-extensions");
 	 options.addArguments("-Djava.awt.headless=true");
-	 //options.addArguments("--allow-file-access-from-files");	
+	 options.addArguments("--allow-file-access-from-files");	
      options.addArguments("--use-fake-device-for-media-stream");						
 	 //options.addArguments("--use-file-for-fake-video-capture=");
      options.addArguments("--use-file-for-fake-audio-capture=C:\\Users\\ASTR-34\\Desktop\\files\\video\\webcam-video.webm");
 	 options.addArguments("--autoplay-policy=no-user-gesture-required");
-	 //options.addArguments("--disable-infobars");	
+	 options.addArguments("--disable-infobars");	
 	 driver = new ChromeDriver(options);		
      driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
      driver.manage().window().maximize();
@@ -60,7 +60,7 @@ public void openapp()
      { 
      e.printStackTrace();
       }
-     driver.close();
+
      
      }
 }
