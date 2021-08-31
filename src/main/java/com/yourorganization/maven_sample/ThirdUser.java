@@ -63,6 +63,7 @@ public class ThirdUser
 		    {
 		    e.printStackTrace();
 		    }
+		    driver.close();
 		    
 	    }
 	

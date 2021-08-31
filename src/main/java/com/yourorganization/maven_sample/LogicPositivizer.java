@@ -60,7 +60,7 @@ public void openapp()
      { 
      e.printStackTrace();
       }
-
+     driver.close();
      
      }
 }
