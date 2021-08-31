@@ -60,6 +60,7 @@ public class SecondUser
 		     rb.keyRelease(KeyEvent.VK_ENTER);    
 		     Thread.sleep(300000);
 		     driver.quit();
+		     driver.navigate().refresh();
 		     }catch (Throwable e) {
 			  e.printStackTrace();
 			 }
