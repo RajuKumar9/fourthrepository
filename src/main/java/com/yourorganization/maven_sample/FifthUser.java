@@ -59,9 +59,8 @@ public class FifthUser
 	     rb.keyPress(KeyEvent.VK_ENTER);	
 	     rb.keyRelease(KeyEvent.VK_ENTER);   
 	     Thread.sleep(300000); 
-	     driver.quit();
 	     driver.navigate().refresh();
-	     
+	     driver.close();
          }catch(Throwable e)
          {
    	     e.printStackTrace();
