@@ -57,7 +57,8 @@ public class ThirdUser
 		     rb.keyRelease(KeyEvent.VK_TAB);
 		     Thread.sleep(2000);
 		     rb.keyPress(KeyEvent.VK_ENTER);	
-		     rb.keyRelease(KeyEvent.VK_ENTER);       
+		     rb.keyRelease(KeyEvent.VK_ENTER);    
+		     Thread.sleep(60000);
 		    }
 		    catch(Throwable e)
 		    {
