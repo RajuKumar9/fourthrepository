@@ -30,7 +30,7 @@ public class ThirdUser
 			 //options.addArguments("--use-file-for-fake-video-capture=");
 		     options.addArguments("--use-file-for-fake-audio-capture=C:\\Users\\ASTR-34\\Desktop\\files\\video\\webcam-video.webm");
 			 options.addArguments("--autoplay-policy=no-user-gesture-required");
-			 //options.addArguments("--disable-infobars");	
+			 options.addArguments("--disable-infobars");	
 			 driver = new ChromeDriver(options);		
 		     driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
 		     driver.manage().window().maximize();
