@@ -58,9 +58,10 @@ public void openapp()
      rb.keyPress(KeyEvent.VK_ENTER);	
      rb.keyRelease(KeyEvent.VK_ENTER); 
      Thread.sleep(300000);
-     driver.quit();
-     Thread.sleep(2000);
-     driver.navigate().refresh();
+     rb.keyPress(KeyEvent.VK_CONTROL);
+     rb.keyPress(KeyEvent.VK_F5);
+     rb.keyRelease(KeyEvent.VK_CONTROL);
+     rb.keyRelease(KeyEvent.VK_F5);
       }catch(Throwable e)
       { 
     	 e.printStackTrace();
