@@ -24,11 +24,11 @@ public class SecondUser
 			 options.addArguments("--headless");
 			 options.addArguments("--window-size=1920,1200");
 		  	 //options.addArguments("--disable-extensions");
-			 //options.addArguments("-Djava.awt.headless=false");
+			 options.addArguments("-Djava.awt.headless=false");
 			 options.addArguments("--allow-file-access-from-files");	
 		     options.addArguments("--use-fake-device-for-media-stream");						
 			 //options.addArguments("--use-file-for-fake-video-capture=");
-			 options.addArguments("--use-file-for-fake-audio-capture=C:\\Users\\ASTR-34\\Desktop\\maven\\javaparser-maven-sample-master\\javaparser-maven-sample-master\\video\\38mb.mp4");
+		     options.addArguments("--use-file-for-fake-audio-capture=C:\\Users\\ASTR-34\\Desktop\\files\\video\\webcam-video.webm");
 			 options.addArguments("--autoplay-policy=no-user-gesture-required");
 			 options.addArguments("--disable-infobars");	
 			 driver = new ChromeDriver(options);		
@@ -59,7 +59,7 @@ public class SecondUser
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);       
 		     }catch (Throwable e) {
-			  e.printStackTrace();
+			 e.printStackTrace();
 			 }
 		     
 	     
