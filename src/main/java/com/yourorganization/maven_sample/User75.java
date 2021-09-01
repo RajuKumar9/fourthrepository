@@ -24,7 +24,7 @@ public class User75
 		 options.addArguments("--use-fake-ui-for-media-stream");
 		 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		 options.addArguments("--headless");
-		 options.addArguments("--window-size=1920,1200");
+		 options.addArguments("--window-size=1280,700");
 	 	 //options.addArguments("--disable-extensions");
 		 //options.addArguments("-Djava.awt.headless=true");
 		 options.addArguments("--allow-file-access-from-files");	
@@ -61,6 +61,7 @@ public class User75
 	     rb.keyPress(KeyEvent.VK_ENTER);	
 	     rb.keyRelease(KeyEvent.VK_ENTER);   
 	     Thread.sleep(1800000);
+	     driver.quit();
 	     }catch(Throwable e)
 	     {
 	     e.printStackTrace();  
