@@ -7,7 +7,8 @@
 <classes>
 <class name="com.yourorganization.maven_sample.LogicPositivizer"/>
 <class name="com.yourorganization.maven_sample.SecondUser"/>
-<class name="com.yourorganization.maven_sample.ThirdUser"/>
+
+<!-- <class name="com.yourorganization.maven_sample.ThirdUser"/>
 <class name="com.yourorganization.maven_sample.FourthUser"/>
 <class name="com.yourorganization.maven_sample.FifthUser"/>
 <class name="com.yourorganization.maven_sample.SixthUser"/>
@@ -119,7 +120,7 @@
 <class name="com.yourorganization.maven_sample.User100"/>
 
 
-
+ -->
 
 </classes>
 </test>
