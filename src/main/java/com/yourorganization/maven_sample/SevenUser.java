@@ -8,16 +8,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.Test;		
+import org.testng.annotations.Test;
 
-public class FifthUser
+public class SevenUser
 {
-	 WebDriver driver;
+
+    WebDriver driver;
 	  @Test
 	  public void openapp()
 	  {  
 		try
-          {
+       {
 	     ChromeOptions options = new ChromeOptions();
 		 options.addArguments("--use-fake-ui-for-media-stream");
 		 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
@@ -35,7 +36,7 @@ public class FifthUser
 	     driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
 	     driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-	     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Student-5");
+	     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Student-7");
 	     System.out.println(driver.getTitle());	
 	     Thread.sleep(2000);
 	     driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
@@ -61,11 +62,11 @@ public class FifthUser
 	     Thread.sleep(1800000);
 	     }catch(Throwable e)
          {
-   	     e.printStackTrace();  
+	     e.printStackTrace();  
           }
 
- 
-   }
+
+}
 	    
 	    
 }

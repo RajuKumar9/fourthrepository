@@ -33,7 +33,7 @@ public class FourthUser
 		     driver.get("https://live.monetanalytics.com/stu_proc/student.html#"); 	
 		     driver.manage().window().maximize();
 			 driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("AW-4");
+		     driver.findElement(By.xpath("//input[@class='bootbox-input bootbox-input-text form-control']")).sendKeys("Student-4");
 		     System.out.println(driver.getTitle());	
 		     Thread.sleep(2000);
 		     driver.findElement(By.xpath("//button[contains(text(),'OK')]")).click();	
@@ -56,9 +56,8 @@ public class FourthUser
 		     Thread.sleep(2000);
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);  
-		     Thread.sleep(300000);
-		     rb.keyPress(KeyEvent.VK_F5);
-		     rb.keyRelease(KeyEvent.VK_F5);
+		     Thread.sleep(1800000);
+
 		     
 	         }catch(Throwable e)
 	        {
