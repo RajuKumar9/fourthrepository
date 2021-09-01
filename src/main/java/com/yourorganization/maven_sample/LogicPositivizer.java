@@ -21,7 +21,7 @@ public void openapp()
 	 options.addArguments("--use-fake-ui-for-media-stream");
 	 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 	 options.addArguments("--headless");
-	 options.addArguments("--window-size=1920,1200");
+	 options.addArguments("--window-size=1280,700");
 	 //options.addArguments("--disable-extensions");
 	 //options.addArguments("-Djava.awt.headless=true");
 	 options.addArguments("--allow-file-access-from-files");	
