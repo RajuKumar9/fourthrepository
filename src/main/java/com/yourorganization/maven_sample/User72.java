@@ -61,7 +61,7 @@ public class User72
 	     rb.keyPress(KeyEvent.VK_ENTER);	
 	     rb.keyRelease(KeyEvent.VK_ENTER);   
 	     Thread.sleep(1800000);
-	     driver.quit();
+	     driver.close();
 	     }catch(Throwable e)
 	     {
 	     e.printStackTrace();  
