@@ -58,9 +58,10 @@ public class SecondUser
 		     Thread.sleep(2000);
 		     rb.keyPress(KeyEvent.VK_ENTER);	
 		     rb.keyRelease(KeyEvent.VK_ENTER);    
-		     Thread.sleep(1800000);
-		     driver.close();
-		     }catch (Throwable e) {
+		     Thread.sleep(60000);
+		     driver.quit();
+		     }catch (Throwable e) 
+		     {
 			  e.printStackTrace();
 			 }
 		     
