@@ -12,13 +12,13 @@
 <class name="com.yourorganization.maven_sample.FourthUser"/>
 <class name="com.yourorganization.maven_sample.FifthUser"/>
 
-<!-- <class name="com.yourorganization.maven_sample.SixthUser"/>
+ <class name="com.yourorganization.maven_sample.SixthUser"/>
 <class name="com.yourorganization.maven_sample.SevenUser"/>
 <class name="com.yourorganization.maven_sample.EightUser"/>
 <class name="com.yourorganization.maven_sample.NineUser"/>
 <class name="com.yourorganization.maven_sample.TenUser"/>
 
-<class name="com.yourorganization.maven_sample.User11"/>
+<!-- <class name="com.yourorganization.maven_sample.User11"/>
 <class name="com.yourorganization.maven_sample.User12"/>
 <class name="com.yourorganization.maven_sample.User13"/>
 <class name="com.yourorganization.maven_sample.User14"/>
