@@ -20,7 +20,7 @@ public class SecondUser
 		     {
 		     ChromeOptions options = new ChromeOptions();
 			 options.addArguments("--use-fake-ui-for-media-stream");
-			 System.setProperty("webdriver.chrome.driver","C:\\Users\\ASTR-34\\Desktop\\files\\chromedriver\\chromedriver_win32\\chromedriver.exe");
+			 System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 			 options.addArguments("--headless");
 			 options.addArguments("--window-size=1280,700");
 		  	 //options.addArguments("--disable-extensions");
