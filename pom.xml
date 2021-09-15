@@ -53,7 +53,7 @@
                                      <mainClass>com.yourorganization.maven_sample.FourthUser</mainClass>
                                     <mainClass>com.yourorganization.maven_sample.FifthUser</mainClass>
                                      
-                                      <mainClass>com.yourorganization.maven_sample.SixthUser</mainClass>
+                                    <!--   <mainClass>com.yourorganization.maven_sample.SixthUser</mainClass>
                                          <mainClass>com.yourorganization.maven_sample.SevenUser</mainClass>
                                            <mainClass>com.yourorganization.maven_sample.EightUser</mainClass>
                                              <mainClass>com.yourorganization.maven_sample.NineUser</mainClass>
@@ -70,7 +70,7 @@
                                              <mainClass>com.yourorganization.maven_sample.User19</mainClass>
                                                <mainClass>com.yourorganization.maven_sample.User20</mainClass>
                                      
-                                  <!--   <mainClass>com.yourorganization.maven_sample.User21</mainClass>
+                                    <mainClass>com.yourorganization.maven_sample.User21</mainClass>
                                      <mainClass>com.yourorganization.maven_sample.User22</mainClass>
                                      <mainClass>com.yourorganization.maven_sample.User23</mainClass>
                                      <mainClass>com.yourorganization.maven_sample.User24</mainClass>
