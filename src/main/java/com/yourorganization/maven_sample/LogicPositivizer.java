@@ -50,7 +50,7 @@ public void openapp()
      Thread.sleep(2000);
      rb.keyPress(KeyEvent.VK_TAB);			
   
-     //rb.keyRelease(KeyEvent.VK_TAB);
+     rb.keyRelease(KeyEvent.VK_TAB);
      Thread.sleep(1000);
      rb.keyPress(KeyEvent.VK_TAB);		
      rb.keyRelease(KeyEvent.VK_TAB);
