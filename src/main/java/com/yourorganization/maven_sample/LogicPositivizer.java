@@ -57,7 +57,7 @@ public void openapp()
      Thread.sleep(2000);
      rb.keyPress(KeyEvent.VK_ENTER);	
      rb.keyRelease(KeyEvent.VK_ENTER); 
-     //Thread.sleep(300000);
+     Thread.sleep(300000);
      driver.close();
       }catch(Throwable e)
       { 
