@@ -62,10 +62,10 @@ public class FifthUser
 	     driver.close();
 	     }catch(Throwable e)
          {
-   	      //e.printStackTrace();  
+   	      e.printStackTrace();  
           }
 
- 
+             
    }
 	    
 	    
